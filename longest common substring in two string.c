@@ -67,3 +67,4 @@ l1         |
       array will start from i=0 and j=0 but lcs value start from (i+1) and (j+1).if one element from str1 and str2 match 
        lcs value will be (1+previous corner lcs value).
        Maximum value will be the longest common subtstring.
+       */
