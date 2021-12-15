@@ -17,10 +17,10 @@ int main()
                 for (ll  j = 0; j < str.size(); j++) {
                         c ^= (1 << (str[j] - 'a'));
                 }
-                ans += m[c];
-          /*if the string size is even and palindrome that means the bitmask of that string is 0.Then it can be make pair with any 
-          string which is odd and palindrome.A odd and palindrome string bitmask is 1 and we sum the total number of odd palindrome 
-          number of string.*/
+                ans += m[c];/*Here we are just adding same string palindrome pair number*/
+               
+               /*After making bitmask of c ,then we are searching for a string which can be make palindrome with c.Basically here we
+               are searching every combination that can be palindrome with c.*/
                 for (ll j = 0; j < 26; j++) {
                         ans += (m[c ^ (1 << j)]);
                 }
