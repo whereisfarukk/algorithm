@@ -9,11 +9,14 @@ struct node {
 node * root = NULL;
 
 void append(int val) {
+  //if the linked list is empty then creat the first node//
   if (root == NULL) {
     root = new node();
     root -> val = val;
     root -> next = NULL;
-  } else {
+  } 
+  //if the linked list already had element//
+  else {
     node * current_node = root;
     while (current_node -> next != NULL) {
       current_node = current_node -> next;
@@ -26,13 +29,16 @@ void append(int val) {
 }
 void delet(int n) {
   node * currentNode = root;
+  //if the deleted element in the first node, then change the address of the root node//
   if (currentNode -> val == n) {
     root = currentNode -> next;
-  } else {
+  } 
+  else {
     while (currentNode -> next != NULL) {
       if (currentNode -> next -> val == n) {
         currentNode -> next = currentNode -> next -> next;
-      } else {
+      } 
+      else {
         currentNode = currentNode -> next;
       }
     }
