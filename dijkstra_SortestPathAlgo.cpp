@@ -33,7 +33,7 @@ void dijkstra(vector<pair<ll, ll>> graph[], ll source, ll destination)
                                 {
                                         dis[child] = dis[vertex] + weight;
                                         p.push({ dis[child], child });
-                                        path[child] = vertex;
+                                        path[child] = vertex; //in the child node always store its parent node for sortest path//
                                 }
                         }
                 }
