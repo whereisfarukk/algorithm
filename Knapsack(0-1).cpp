@@ -16,7 +16,9 @@ ll Knapsack(ll indx, ll wt_left) {
         if (dp[indx][wt_left] != -1) {
                 return dp[indx][wt_left];
         }
+        // function calling when wt[indx] is avoided//
         ll ans = Knapsack(indx - 1, wt_left - 0);
+        //function calling when wt[indx] is considered//
         if (wt_left - wt[indx] >= 0) {
                 ans = max(ans, Knapsack(indx - 1, wt_left - wt[indx]) + val[indx]);
         }
