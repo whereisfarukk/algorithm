@@ -10,8 +10,6 @@
 #define countv(v,a)   count(v.begin(),v.end(),a)
 #define f first
 #define s second
-#define pb push_back
-//#define mp make_pair
 #define ll long long
 #define ull unsigned long long
 #define lld long  double
@@ -44,18 +42,18 @@ template <class T> void _print(vector <T> v);
 template <class T> void _print(set <T> v);
 template <class T, class V> void _print(map <T, V> v);
 template <class T> void _print(multiset <T> v);
-template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.ff); cerr << ","; _print(p.ss); cerr << "}";}
+template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.f); cerr << ","; _print(p.s); cerr << "}";}
 template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
 
-/******************************************************************************************************************************/
+/************************************************************************************************/
 
 
 void solve() {
-   
+
 }
 
 int main() {
