@@ -9,7 +9,7 @@ ll dis[mx];
 ll path[mx];
 void dijkstra(vector<pair<ll, ll>> graph[], ll source, ll destination)
 {
-        priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>> p;
+        priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>> p; // its actually priority_queue<vector<pair<ll, ll>>>p but in decending oder
         p.push({ 0, source });
         dis[source] = 0;
         while (!p.empty())
