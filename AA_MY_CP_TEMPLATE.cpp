@@ -47,6 +47,7 @@ template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_prin
 template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
+template <size_t R, size_t C> void _print(ll (&arr)[R][C]) { cerr << "[ "; for (size_t i = 0; i < R; ++i) { cerr << "[ "; for (size_t j = 0; j < C; ++j) { _print(arr[i][j]); cerr << " "; } cerr << "] "; } cerr << "]"; }
 
 
 /************************************************************************************************/
